@@ -5,10 +5,6 @@ return [
     /*
     |--------------------------------------------------------------------------
     | Indipay Service Config 
-    | ------- ciprus payment gateway Test Credentials--------------
-    | vanity Url : https://sandbox.citruspay.com/e6ojft1vuh
-    | Access key : T80ONT2HMDCNNMOU4852
-    | Secret Key : b5a61cf7a75cda5d07ad6378bae77d5138a48109
     |--------------------------------------------------------------------------
     |   gateway = CCAvenue / PayUMoney / EBS / Citrus / InstaMojo
     |   view    = File
@@ -32,8 +28,8 @@ return [
     ],
 
     'payumoney' => [                         // PayUMoney Parameters
-        'merchantKey'  => env('INDIPAY_MERCHANT_KEY', 'rjQUPktU'),
-        'salt'  => env('INDIPAY_SALT', 'e5iIg1jwi8'),
+        'merchantKey'  => env('INDIPAY_MERCHANT_KEY', 'Your merchant Key'),
+        'salt'  => env('INDIPAY_SALT', 'Your Salt'),
         'workingKey' => env('INDIPAY_WORKING_KEY', ''),
 
         // Should be route address for url() function
@@ -50,8 +46,8 @@ return [
     ],
 
     'citrus' => [                         // Citrus Parameters
-        'vanityUrl'  => env('INDIPAY_CITRUS_VANITY_URL', 'e6ojft1vuh'),
-        'secretKey' => env('INDIPAY_WORKING_KEY', 'b5a61cf7a75cda5d07ad6378bae77d5138a48109'),
+        'vanityUrl'  => env('INDIPAY_CITRUS_VANITY_URL', ''),
+        'secretKey' => env('INDIPAY_WORKING_KEY', ''),
 
         // Should be route address for url() function
         'returnUrl' => env('INDIPAY_SUCCESS_URL', 'indipay/response'),
